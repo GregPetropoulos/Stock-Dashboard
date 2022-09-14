@@ -7,45 +7,41 @@ import { BiSearch } from 'react-icons/bi';
 
 const SideNav = () => {
   return (
-    <div className='block mt-3 text-center xsm:flex xsm:flex-col xsm:w-full xsm:justify-center xsm:align-middle xsm:h-screen '>
-      {/* <label htmlFor='my-drawer-1' className='drawer-overlay'></label> */}
-      <ul className=' menu xsm:justify-evenly xsm:border-r-2 xsm:h-full xsm:border-r-success xsm:p-1 xsm:overflow-y-auto xsm:w-36 bg-base-100 text-base-content'>
+    <>
+      <ul className='flex flex-col justify-around align-middle  h-full border-r-success border-r-2 '>
         {/* <!-- Sidebar content here --> */}
-        <li className='  mx-4  text-sm sm:hidden'>
-          <a href={'!#'} alt='search' className='flex justify-center'>
-            <BiSearch className='mr-2 mt-1' />
-            Search
+        <li className=' p-2 text-xs  sm:hidden'>
+          <a href={'!#'} alt='search' className=''>
+            <BiSearch className='inline-block mr-2' />{' '}
+            <p className='hidden xsm:inline-block'>Search</p>
           </a>
         </li>
-        <li className='mx-4 text-sm'>
-          <a
-            href={'!#'}
-            alt='wallet'
-            className='flex justify-center'>
-            <BiWallet className='mr-2 mt-1' />
-            <p className=''>Wallet</p>
+        <li className=' p-2 text-xs'>
+          <a href={'!#'} alt='wallet' className=''>
+            <BiWallet className='inline  mr-2' />
+            <p className='hidden xsm:inline-block'>Wallet</p>
           </a>
         </li>
-        <li className='mx-4  text-sm'>
-          <a href={'!#'} alt='Trades' className='flex justify-center'>
-            <BiPurchaseTag className='mr-2 mt-1' />
-            Trades
+        <li className=' p-2 text-xs'>
+          <a href={'!#'} alt='Trades' className=''>
+            <BiPurchaseTag className='inline mr-2' />
+            <p className='hidden xsm:inline-block'>Trades</p>
           </a>
         </li>
-        <li className='mx-4  text-sm'>
-          <a href={'!#'} alt='Message' className='flex justify-center'>
-            <BiMessageSquareAdd className='mr-2 mt-1' />
-            Messages
+        <li className=' p-2 text-xs'>
+          <a href={'!#'} alt='Message' className='flex'>
+            <BiMessageSquareAdd className='inline mr-2' />
+            <p className='hidden xsm:inline-block'>Messages</p>
           </a>
         </li>
-        <li className='mx-4  text-sm'>
-          <a href={'!#'} alt='Settings' className='flex justify-center'>
-            <AiOutlineSetting className='mr-2 mt-1' />
-            Settings
+        <li className='p-2 text-xs '>
+          <a href={'!#'} alt='Settings' className='flex'>
+            <AiOutlineSetting className='inline mr-2' />
+            <p className='hidden xsm:inline-block'>Settings</p>
           </a>
         </li>
       </ul>
-    </div>
+    </>
   );
 };
 
