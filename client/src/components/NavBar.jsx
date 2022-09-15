@@ -1,5 +1,6 @@
 import React from 'react';
 import { BiBell } from 'react-icons/bi';
+import { BiSearch } from 'react-icons/bi';
 import { Link } from 'react-router-dom';
 
 const NavBar = () => {
@@ -10,8 +11,9 @@ const NavBar = () => {
           Dashboard
         </Link>
       </div>
-      <div className="hidden sm:form-control">
-      <input type="text" placeholder="Search" className=" xsm:p-3 xsm:input xsm:input-xs xsm:input-bordered xsm:input-success xsm:w-32 xsm:mr-" />
+      <div className=" relative hidden sm:form-control">
+      <input type="text" placeholder="Search" className=" xsm:p-3 xsm:input xsm:input-xs xsm:input-bordered xsm:input-success xsm:w-32 " />
+      <BiSearch className=' xsm:absolute xsm:pointer-events-none xsm:left-24 xsm:top-1'/>
     </div>
       <div className='flex-none'>
         <label tabIndex={0} className='btn btn-ghost btn-circle'>

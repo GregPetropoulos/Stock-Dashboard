@@ -2,7 +2,7 @@ import React from 'react'
 import Chart from './charts/chart'
 const Card = () => {
   return (
-    <div className='w-1/3 h-[50px] m-4'>
+    <div className='w-full h-full'>
     <h1>Card</h1>
 
 <Chart/>

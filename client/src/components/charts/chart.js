@@ -20,8 +20,8 @@ export const options = {
     return (
         <Chart
         chartType="LineChart"
-      width="250px"
-      height="250px"
+      width="100%"
+      // height="100%"
       data={data}
       options={options}
         />
