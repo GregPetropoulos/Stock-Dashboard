@@ -21,7 +21,7 @@ export const options = {
         <Chart
         chartType="LineChart"
       width="100%"
-      // height="100%"
+      height="100%"
       data={data}
       options={options}
         />
