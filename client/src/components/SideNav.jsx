@@ -8,7 +8,7 @@ import { BiSearch } from 'react-icons/bi';
 const SideNav = () => {
   return (
     <>
-      <ul className='flex flex-col justify-around align-middle  h-full border-r-success border-r-2 '
+      <ul className=' flex flex-col h-full items-center justify-evenly border-r-success border-r-2 '
       >
         {/* <!-- Sidebar content here --> */}
         <li className=' p-2 text-xs  sm:hidden'>

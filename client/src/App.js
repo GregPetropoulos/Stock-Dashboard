@@ -10,6 +10,7 @@ import About from './components/pages/About';
 import NavBar from './components/NavBar';
 import Settings from './components/pages/Settings';
 import Landing from './components/pages/Landing';
+import MarketOverview from './components/pages/MarketOverview';
 
 import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
@@ -32,6 +33,7 @@ const App = () => {
           <Route path='/register' element={<Register />} />
           <Route path='/logout' element={<Login />} />
           <Route path='/settings' element={<Settings />} />
+          <Route path='/market-overview' element={<MarketOverview />} />
           <Route path='/about' element={<About />} />
           <Route path='/*' element={<NotFound />} />
         </Routes>

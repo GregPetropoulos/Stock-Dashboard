@@ -1,15 +1,15 @@
 import React from 'react'
-
+import Carousel from './Carousel'
+import RecentTransactionsCard from './RecentTransactionsCard'
+import UpgradeNowCard from './UpgradeNowCard'
 const AsideCard = () => {
   return (
-    <div className="card w-full h-full bg-primary text-primary-content">
+    <div className="card h-full bg-primary justify-center align-middle items-center  text-center text-primary-content">
   <div className="card-body">
-    <h2 className="card-title">Your Cards</h2>
-    <p>Carousel here </p>
-    <p>Recent Transactions History </p>
-    <div className="card-actions justify-end">
-      <button className="btn">Upgrade Now</button>
-    </div>
+    <h2 className="card-title justify-center items-center ">Your Cards</h2>
+    <Carousel/>
+<RecentTransactionsCard/>
+<UpgradeNowCard/>
   </div>
 </div>
   )
