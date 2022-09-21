@@ -1,11 +1,12 @@
 import { useState } from 'react';
 import SideNav from '../SideNav';
-import Cards from '../Cards';
+import Card from '../Card';
 import AsideCard from '../AsideCard';
+import BigCard from '../BigCard';
 
 // Layout is made of 3 columns left to right
 
-const Home = () => {
+const Home = ({data}) => {
   const [show, setShow] = useState(true);
 
   return (
@@ -17,7 +18,8 @@ const Home = () => {
 
         <div className='flex flex-wrap flex-row w-full  h-full sm:flex-nowrap '>
           <div className=' flex flex-col w-full '>
-            <Cards />
+            <Card data={data} />
+            <BigCard data={data}/>
           </div>
           <div className=' flex flex-col  w-full sm:w-1/5'>
             <AsideCard />
